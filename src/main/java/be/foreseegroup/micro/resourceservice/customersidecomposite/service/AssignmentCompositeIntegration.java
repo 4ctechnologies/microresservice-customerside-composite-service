@@ -206,16 +206,18 @@ public class AssignmentCompositeIntegration {
         ResponseEntity<Customer> customerResponse = customerIntegration.getCustomerById(customerId);
         if (customerResponse.getStatusCode() == HttpStatus.OK) {
             Customer customer = customerResponse.getBody();
-            aggregatedAssignment.setCustomerName(customer.getName());
+            aggregatedAssignment.setCustomer(customer);
+            //aggregatedAssignment.setCustomerName(customer.getName());
         }
 
         ResponseEntity<Consultant> consultantResponse = consultantIntegration.getConsultantById(consultantId);
         if (consultantResponse.getStatusCode() == HttpStatus.OK) {
             Consultant consultant = consultantResponse.getBody();
-            String consultantFirstname = consultant.getFirstname();
-            String consultantLastname = consultant.getLastname();
-            String consultantName = consultantFirstname + " " + consultantLastname;
-            aggregatedAssignment.setConsultantName(consultantName);
+            aggregatedAssignment.setConsultant(consultant);
+            //String consultantFirstname = consultant.getFirstname();
+            //String consultantLastname = consultant.getLastname();
+            //String consultantName = consultantFirstname + " " + consultantLastname;
+            //aggregatedAssignment.setConsultantName(consultantName);
         }
 
         return aggregatedAssignment;
