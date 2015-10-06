@@ -10,9 +10,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
+import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 
@@ -35,10 +38,23 @@ public class AssignmentCompositeIntegration {
     private CustomerCompositeIntegration customerIntegration;
 
 
-    /**
-     * @todo:
-     * Hystrix is also using the fallbackMethod when the person resource returns (intended) 4xx errors, e.g. 404 not found
-     */
+    public AssignmentCompositeIntegration() {
+        /**
+         * Set the behaviour of the restTemplate that it does not throw exceptions (causing hystrix to break)
+         * on error HttpStatus 4xx codes
+         */
+        restTemplate.setErrorHandler(new ResponseErrorHandler() {
+            @Override
+            public boolean hasError(ClientHttpResponse response) throws IOException {
+                return false;
+            }
+
+            @Override
+            public void handleError(ClientHttpResponse response) throws IOException {
+                // do nothing, or something
+            }
+        });
+    }
 
     public ResponseEntity<Iterable<AssignmentAggregated>> getAllAggregatedAssignments() {
         ResponseEntity<Iterable<Assignment>> response = getAllAssignments();
