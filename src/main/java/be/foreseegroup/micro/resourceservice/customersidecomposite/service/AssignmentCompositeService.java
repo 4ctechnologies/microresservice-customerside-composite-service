@@ -19,25 +19,25 @@ public class AssignmentCompositeService {
     @Autowired
     AssignmentCompositeIntegration assignmentIntegration;
 
-    @RequestMapping(method = RequestMethod.GET, value="/oassignments")
+    @RequestMapping(method = RequestMethod.GET, value="/assignments")
     public ResponseEntity<Iterable<Assignment>> getAllAssignments() {
         return assignmentIntegration.getAllAssignments();
     }
 
-    @RequestMapping(method = RequestMethod.GET, value="/assignments")
-    public ResponseEntity<Iterable<AssignmentAggregated>> getAllAggregatedAssignments() {
-        return assignmentIntegration.getAllAggregatedAssignments();
-    }
+//    @RequestMapping(method = RequestMethod.GET, value="/assignments")
+//    public ResponseEntity<Iterable<AssignmentAggregated>> getAllAggregatedAssignments() {
+//        return assignmentIntegration.getAllAggregatedAssignments();
+//    }
 
-    @RequestMapping(method = RequestMethod.GET, value="/oassignments/{assignmentId}")
+    @RequestMapping(method = RequestMethod.GET, value="/assignments/{assignmentId}")
     public ResponseEntity<Assignment> getAssignmentById(@PathVariable String assignmentId) {
         return assignmentIntegration.getAssignmentById(assignmentId);
     }
 
-    @RequestMapping(method = RequestMethod.GET, value="/assignments/{assignmentId}")
-    public ResponseEntity<AssignmentAggregated> getAggregatedAssignmentById(@PathVariable String assignmentId) {
-        return assignmentIntegration.getAggregatedAssignmentById(assignmentId);
-    }
+//    @RequestMapping(method = RequestMethod.GET, value="/assignments/{assignmentId}")
+//    public ResponseEntity<AssignmentAggregated> getAggregatedAssignmentById(@PathVariable String assignmentId) {
+//        return assignmentIntegration.getAggregatedAssignmentById(assignmentId);
+//    }
 
     @RequestMapping(method = RequestMethod.POST, value="/assignments")
     public ResponseEntity<Assignment> createAssignment(@RequestBody Assignment assignment) {

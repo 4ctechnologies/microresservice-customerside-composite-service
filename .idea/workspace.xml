@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04b33d42-99fe-4d68-b2dc-879bafa2ef6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeIntegration.java" afterPath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeIntegration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeIntegration.java" afterPath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeIntegration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeIntegration.java" afterPath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeIntegration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java" afterPath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java" afterPath="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java" />
     </list>
     <ignored path="customerside-composite-service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,10 +113,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssignmentCompositeIntegration.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConsultantCompositeService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4351145">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="39" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssignmentCompositeIntegration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeIntegration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5038168">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -131,7 +140,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="39" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -801,9 +810,7 @@
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ServiceUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeInterface.java" />
@@ -811,6 +818,8 @@
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeIntegration.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeIntegration.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeIntegration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java" />
       </list>
     </option>
   </component>
@@ -1572,13 +1581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/CustomerSideCompositeServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1648,20 +1650,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeIntegration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/CustomerCompositeIntegration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeIntegration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9804#9826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="39" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1679,14 +1692,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/AssignmentCompositeIntegration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/foreseegroup/micro/resourceservice/customersidecomposite/service/ConsultantCompositeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5038168">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9804#9826#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.4351145">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="39" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
