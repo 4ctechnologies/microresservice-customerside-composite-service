@@ -39,6 +39,16 @@ public class AssignmentCompositeService {
 //        return assignmentIntegration.getAggregatedAssignmentById(assignmentId);
 //    }
 
+    @RequestMapping(method = RequestMethod.GET, value="/assignments/bycid/{consultantId}")
+    public ResponseEntity<Iterable<Assignment>> getAssignmentsByConsultantId(@PathVariable String consultantId) {
+        return assignmentIntegration.getAssignmentsByConsultantId(consultantId);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value="/assignments/bycuid/{customerId}")
+    public ResponseEntity<Iterable<Assignment>> getAssignmenttsByCustomerId(@PathVariable String customerId) {
+        return assignmentIntegration.getAssignmentsByCustomerId(customerId);
+    }
+
     @RequestMapping(method = RequestMethod.POST, value="/assignments")
     public ResponseEntity<Assignment> createAssignment(@RequestBody Assignment assignment) {
         return assignmentIntegration.createAssignment(assignment);
